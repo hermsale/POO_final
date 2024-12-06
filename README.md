@@ -25,4 +25,33 @@ sistemaGaraje.
 
 La clase GarajeTest tiene un método main en el que se crea un Garaje, una serie de
 vehículos que se irán recibiendo en el garaje y por último se imprimirá por pantalla
-toda la información general del garaje así como la información de cada vehículo. 
+toda la información general del garaje así como la información de cada vehículo. para
+
+Garage
+<!-- atributos  -->
+precio cambio de rueda // se fija al principio de la apertura del programa
+capacidad vehiculos // se fija al principio de la apertura del programa
+cantidad vehiculos // cantidad de vehiculos actual - se muestra en el menu siempre actualizado
+<!-- metodos -->
+ingreso vehiculo // verifica si hay lugar en el garaje. si hay, realiza el ingreso. 
+egreso vehiculo // elimina un vehiculo del garaje
+precio cambio de rueda total // precio total de cambio de rueda de todos los vehiculos
+kilometraje medio // kilometraje medio de todos los vehiculos ingresados
+cambiar rueda // metodo
+
+Vehiculo abstract
+patente // para identificar el auto que se va a eliminar del garaje
+marca
+kilometraje 
+
+Moto
+cilindrada
+ruedas
+
+Auto
+numero de puertas
+ruedas
+
+
+<!-- tips de marta -->
+ 
