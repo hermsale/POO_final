@@ -1,8 +1,6 @@
 package modelo;
 
 public class Auto extends Vehiculo {
-    // numero de puertas
-    // ruedas
     private int puertas;
     private int ruedas;
 

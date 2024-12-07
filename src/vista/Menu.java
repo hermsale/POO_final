@@ -1,6 +1,7 @@
 package vista;
 
 import java.util.Scanner;
+import dao.VehiculoDAO;
 
 public final class Menu {
     // se crea una referencia interna de controladorEmpresa. 
@@ -59,6 +60,8 @@ public final class Menu {
 
                     case 6:
                     System.out.println("¡Muchas gracias por utilizar la aplicación!");
+                    // cierro la app y la conexion a la BD
+                    VehiculoDAO.cerrarConexion(); 
                     break;
                     
                     default:
