@@ -12,6 +12,7 @@ public abstract class Vehiculo {
     private String marca;
     private int kilometraje;
     
+    
     public Vehiculo(String patente, String marca, int kilometraje) {
         this.patente = patente;
         this.marca = marca;
