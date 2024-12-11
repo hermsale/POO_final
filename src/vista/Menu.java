@@ -8,7 +8,7 @@ import dao.VehiculoDAO;
 public final class Menu {
     // se crea una referencia interna de controladorEmpresa.
 
-    private Scanner sc = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
 
     // variable utilizada para gestionar las distintas opciones
     private int opcion;
@@ -36,8 +36,8 @@ public final class Menu {
             System.out.println("----------------------------------------------------------------");
             System.out.println("Bienvenido al Sistema de Gestión de Garaje");
             System.out.println();
-            System.out.println("1. Ingresar precio rueda");
-            System.out.println("2. Ingresar cantidad vehiculos");
+            System.out.println("1. Modificar precio cambio rueda");
+            System.out.println("2. Modificar cantidad máxima de vehiculos");
             System.out.println("3. Mostrar información de todos los vehiculos");
             System.out.println("4. Ingresar vehiculo");
             System.out.println("5. Retirar vehiculo");
@@ -110,7 +110,7 @@ public final class Menu {
                     break;
 
             }
-        } while (opcion != 7);
+        } while (opcion != 8);
         sc.close();
     }
 

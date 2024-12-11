@@ -53,12 +53,9 @@ public class Garaje {
         return moto;
     }
 
-    public Vehiculo mostrarVehiculos() {
-        // System.out.println("Cantidad de vehiculos ingresados: "+vehiculos.size());
-        for (Vehiculo vehiculo : vehiculos) {
-            System.out.println(vehiculo);
-        }
-        return null;
+    // metodo para mostrar los vehiculos ingresados en el garaje
+    public List<Vehiculo> mostrarVehiculos() {;
+            return vehiculos;
     }
 
     // calculo la cantidad de ruedas total de todos los vehiculos

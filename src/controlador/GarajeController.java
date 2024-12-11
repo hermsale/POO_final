@@ -1,13 +1,17 @@
 package controlador;
+import java.util.List;
+
 import modelo.Garaje;
+import modelo.Vehiculo;
 
 
 public class GarajeController {
 
     private Garaje garaje;   
-
-    public GarajeController(Garaje garaje) {
+    private List<Vehiculo> vehiculos; 
+    public GarajeController(Garaje garaje, List<Vehiculo> vehiculos) {
         this.garaje = garaje;
+        this.vehiculos = vehiculos;
     }
 
 
@@ -41,15 +45,30 @@ public class GarajeController {
         }
     }
 
+//  muestro los vehiculos ingresados en el garaje 
     public void mostrarVehiculos(){
-        System.out.println("Vehiculos cargados: \n");
-        garaje.mostrarVehiculos();        // hay que mostrarlo aca no en la clase
+        List<Vehiculo> vehiculos = garaje.mostrarVehiculos();
+        if (vehiculos.isEmpty()) {
+            System.out.println("No hay vehículos ingresados en el garaje.");
+            return;
+        }
+    
+        System.out.println("Vehículos ingresados en el garaje:");
+        for (Vehiculo vehiculo : vehiculos) {
+            System.out.println(vehiculo); // Imprime la información de cada vehículo
+        }
     }
 
-    public void informacionGaraje(){
-        System.out.print("\nCapacidad máxima: "+garaje.getCapacidadVehiculos());
-        System.out.print("\nPrecio cambio de rueda: "+garaje.getPrecioCambioRueda());
+    public void informacionGaraje() {
+        System.out.println("---------------------------------------------------");
+        System.out.println("Información del Garaje");
+        System.out.println("---------------------------------------------------");
+        System.out.println("Cantidad de vehículos almacenados: " + garaje.vehiculosAlmacenados());
+        System.out.println("Capacidad máxima del garaje: " + garaje.getCapacidadVehiculos());
+        System.out.println("Precio por cambio de rueda: $" + garaje.getPrecioCambioRueda());
+        System.out.println("---------------------------------------------------");
     }
+    
 
 // muestro el costo total por cambiar todas las ruedas y el kilometraje medio de los vehiculos ingresados
     public void costoTotalYKmMedio() {

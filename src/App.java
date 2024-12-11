@@ -12,7 +12,7 @@ public class App {
 
         // Garaje garaje = new Garaje(100, 5, null);
         Garaje garaje = GarajeTest.cargaDatos();
-        GarajeController controlador = new GarajeController(garaje);
+        GarajeController controlador = new GarajeController(garaje, null);
        // VehiculoDAO.verificarConexion();
        
         Menu menuPrincipal = new Menu(controlador);
