@@ -31,7 +31,7 @@ Garage
 <!-- atributos  -->
 precio cambio de rueda // se fija al principio de la apertura del programa
 capacidad vehiculos // se fija al principio de la apertura del programa
-cantidad vehiculos // cantidad de vehiculos actual - se muestra en el menu siempre actualizado
+cantidad vehiculos // cantidad de vehiculos actual 
 <!-- metodos -->
 ingreso vehiculo // verifica si hay lugar en el garaje. si hay, realiza el ingreso. 
 egreso vehiculo // elimina un vehiculo del garaje

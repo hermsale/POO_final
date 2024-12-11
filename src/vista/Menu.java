@@ -3,7 +3,7 @@ package vista;
 import java.util.Scanner;
 
 import controlador.GarajeController;
-import dao.VehiculoDAO;
+
 
 public final class Menu {
     // se crea una referencia interna de controladorEmpresa.
@@ -24,8 +24,6 @@ public final class Menu {
     private int ruedas; // moto / auto 
     private int cilindrada; // moto
 
-    // se recibe la inyeccion de dependencias en el constructor, enviado desde
-    // menuPrincipal.mostrar(), para gestionar controladorEmpresas desde Menu
     public Menu(GarajeController garajeController) {
         this.garajeController = garajeController;
     }
@@ -42,6 +40,7 @@ public final class Menu {
             System.out.println("4. Ingresar vehiculo");
             System.out.println("5. Retirar vehiculo");
             System.out.println("6. Mostrar información del garaje");
+            // 
             System.out.println("7. Calculo ruedas total y kilometraje medio");
             System.out.println("8. Salir");
             System.out.print("Seleccione una opción: ");

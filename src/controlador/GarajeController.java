@@ -11,7 +11,6 @@ public class GarajeController {
    
     public GarajeController(Garaje garaje) {
         this.garaje = garaje;
-       
     }
 
 
