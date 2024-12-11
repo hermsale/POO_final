@@ -80,24 +80,21 @@ public final class Menu {
                     break;
 
                 case 5:
-                    // retirar vehiculo
                     retiroVehiculo();
                     pausar();
                     break;
                 case 6:
-                    // muestra la cantidad maxima de capacidad y el costo por rueda
                     garajeController.informacionGaraje();
                     pausar();
                     break;
                 case 7:
-                    // muestra calculo
                     garajeController.costoTotalYKmMedio();
                     pausar();
                     break;
                 case 8:
                     System.out.println("¡Muchas gracias por utilizar la aplicación!");
                     // cierro la app y la conexion a la BD
-                    VehiculoDAO.cerrarConexion();
+                    // VehiculoDAO.cerrarConexion();
                     break;
 
                 default:

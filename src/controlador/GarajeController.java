@@ -8,10 +8,10 @@ import modelo.Vehiculo;
 public class GarajeController {
 
     private Garaje garaje;   
-    private List<Vehiculo> vehiculos; 
-    public GarajeController(Garaje garaje, List<Vehiculo> vehiculos) {
+   
+    public GarajeController(Garaje garaje) {
         this.garaje = garaje;
-        this.vehiculos = vehiculos;
+       
     }
 
 
@@ -120,7 +120,8 @@ public class GarajeController {
 
     public void buscarYEliminarVehiculo(String patente){
         if(garaje.eliminarVehiculo(patente)){
-            System.out.println("El vehículo con patente " + patente + " ha sido eliminado.");
+            System.out.println("El vehículo con patente " + patente + " ha sido retirado.");
+            System.out.println("¡Muchas gracias vuelva pronto!");
         }else{
             System.out.println("No se encontró ningún vehículo con la patente " + patente + ".");
         }

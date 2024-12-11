@@ -51,7 +51,3 @@ ruedas
 Auto
 numero de puertas
 ruedas
-
-
-<!-- tips de marta -->
- 

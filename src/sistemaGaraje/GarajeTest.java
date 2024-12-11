@@ -17,8 +17,8 @@ public class GarajeTest {
         sc.nextLine();
         Garaje garaje = new Garaje(precioCambioRueda,cantidadVehiculos,null);
         // Crear vehículos
-        garaje.ingresoAuto("AA076UL","Ford" , 136000, 5, 4);
-        garaje.ingresoMoto("QRU802", "Honda", 62350, 600, 2);
+        // garaje.ingresoAuto("AA076UL","Ford" , 136000, 5, 4);
+        // garaje.ingresoMoto("QRU802", "Honda", 62350, 600, 2);
 
         return garaje;
     }
